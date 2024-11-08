@@ -67,6 +67,11 @@ document.getElementById('cropButton').addEventListener('click', () => {
     }
 });
 
+// Theme toggle button
+document.getElementById('toggleThemeButton').addEventListener('click', () => {
+    document.body.classList.toggle('night-mode');
+});
+
 // Function to reset the previous image and details
 function resetPreviousImageAndDetails() {
     // Clear any previously displayed image
