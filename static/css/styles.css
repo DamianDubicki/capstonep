@@ -1,7 +1,9 @@
+/*Main*/
 body {
     background-color: #ffffff;
     color: #141414;
     transition: background-color 0.3s, color 0.3s;
+    touch-action: none;
 }
 
 .container {
@@ -11,6 +13,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 20px;
+    touch-action: none;
 }
 
 .titleContainer {
@@ -22,6 +25,7 @@ body {
     font-weight: bold;
 }
 
+/*Buttons*/
 .button {
     width: 300px;
     height: 60px;
@@ -41,6 +45,7 @@ body {
     background-color: #949393;
 }
 
+/*Cropping*/
 .imageButtonContainer {
     display: flex;
     flex-direction: column;
@@ -56,6 +61,7 @@ body {
     margin-bottom: 10px;
 }
 
+/*Prediction*/
 .loading {
     font-size: 24px;
     font-weight: bold;
@@ -77,6 +83,7 @@ body {
     color: #141414;
 }
 
+/*Dark Mode*/
 body.night-mode {
     background-color: #000000;
     color: #ffffff;
