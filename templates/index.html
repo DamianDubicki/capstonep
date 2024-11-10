@@ -12,13 +12,18 @@
         <div class="titleContainer">
             <h1 class="title">IDArt</h1>
         </div>
+        
         <button class="button" id="uploadButton">Upload</button>
         <input type="file" id="imageInput" accept="image/*" style="display: none;">
+
         <div id="cropContainer" style="display: none;">
-            <img id="cropImage" class="image">
-            <p id="instructionText" class="instructionText">Crop out any frame or background</p>
-            <button class="button" id="cropButton">Get Results</button>
+            <div class="imageButtonContainer">
+                <img id="cropImage" class="image">
+                <p id="instructionText" class="instructionText">Crop out any frame or background</p>
+                <button class="button" id="cropButton">Get Results</button>
+            </div>
         </div>
+
         <img id="selectedImage" class="image">
         <div id="loading" class="loading" style="display: none;">Loading...</div>
         <div id="prediction" class="prediction">
@@ -30,6 +35,7 @@
         </div>
         <button class="button toggle-button" id="toggleThemeButton">Day/Night</button>
     </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
     <script src="/static/js/javascript.js"></script>
 </body>

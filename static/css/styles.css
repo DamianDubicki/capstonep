@@ -1,6 +1,6 @@
 body {
     background-color: #ffffff;
-    color: #000000;
+    color: #141414;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -41,10 +41,19 @@ body {
     background-color: #949393;
 }
 
-.image {
-    max-width: 350px;
-    max-height: 350px;
+.imageButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     margin-top: 10px;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 350px;
+    margin-bottom: 10px;
 }
 
 .loading {
@@ -59,12 +68,13 @@ body {
 
 .predictionText {
     font-size: 20px;
+    text-align: center;
 }
 
 .instructionText {
     font-size: 18px;
     text-align: center;
-    color: #000000;
+    color: #141414;
 }
 
 body.night-mode {

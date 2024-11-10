@@ -35,7 +35,7 @@ document.getElementById('imageInput').addEventListener('change', (event) => {
         cropper = new Cropper(document.getElementById('cropImage'), {
             aspectRatio: NaN,
             viewMode: 1,
-            dragMode: 'move',
+            dragMode: 'none',
             autoCropArea: 0.8,
             zoomable: false,
             scalable: false,
