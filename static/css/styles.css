@@ -3,6 +3,8 @@ body {
     background-color: #ffffff;
     color: #141414;
     transition: background-color 0.3s, color 0.3s;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling */
+    overflow-y: scroll; /* Allow vertical scrolling */
 }
 
 .container {
@@ -51,7 +53,7 @@ body {
     justify-content: center;
     text-align: center;
     margin-top: 10px;
-    touch-action: pan-x pan-y;
+    touch-action: pan-x pan-y; /* Disable pinch zoom */
 }
 
 .image {
