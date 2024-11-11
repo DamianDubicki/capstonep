@@ -12,7 +12,6 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 20px;
-    touch-action: none;
 }
 
 .titleContainer {
@@ -52,6 +51,7 @@ body {
     justify-content: center;
     text-align: center;
     margin-top: 10px;
+    touch-action: pan-x pan-y;
 }
 
 .image {
