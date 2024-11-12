@@ -1,3 +1,11 @@
+/*
+    Application Name: IDArt 
+    Course: INFO39014 Capstone Project 
+    Date: November 25, 2024
+    Group: 19
+    Authors: Damian Dubicki, Dylan Law, Suresh Sharma, Volodymyr Suprun
+*/
+
 let cropper;
 
 // Opens the file picker
@@ -16,8 +24,8 @@ document.getElementById('imageInput').addEventListener('change', (event) => {
         return;
     }
 
-    // Clear previous image and details
-    resetPreviousImageAndDetails();
+    // Clear previous results
+    resetResults();
 
     const reader = new FileReader();
     reader.onload = () => {
@@ -67,13 +75,13 @@ document.getElementById('cropButton').addEventListener('click', () => {
     }
 });
 
-// Theme toggle button
+// Event listener for theme button
 document.getElementById('toggleThemeButton').addEventListener('click', () => {
     document.body.classList.toggle('night-mode');
 });
 
-// Function to reset the previous image and details
-function resetPreviousImageAndDetails() {
+// Function to clear the image and details
+function resetResults() {
     // Clear any previously displayed image
     document.getElementById('selectedImage').src = '';
     document.getElementById('selectedImage').style.display = 'none';
@@ -94,6 +102,7 @@ function resetPreviousImageAndDetails() {
     document.getElementById('imageInput').value = '';
 }
 
+// Function to upload an image for prediction
 async function uploadImage(file) {
     document.getElementById('loading').style.display = 'block';
 

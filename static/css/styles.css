@@ -1,3 +1,11 @@
+/*
+    Application Name: IDArt 
+    Course: INFO39014 Capstone Project 
+    Date: November 25, 2024
+    Group: 19
+    Authors: Damian Dubicki, Dylan Law, Suresh Sharma, Volodymyr Suprun
+*/
+
 /*Main*/
 body {
     background-color: #ffffff;
@@ -76,7 +84,7 @@ body {
     color: #141414;
 }
 
-/*Dark Mode*/
+/*Night Mode*/
 body.night-mode {
     background-color: #000000;
     color: #ffffff;

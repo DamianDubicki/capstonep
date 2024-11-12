@@ -1,3 +1,11 @@
+"""
+Application Name: IDArt
+Course: INFO39014 Capstone Project
+Date: November 25, 2024
+Group: 19
+Authors: Damian Dubicki, Dylan Law, Suresh Sharma, Volodymyr Suprun
+"""
+
 from flask import Flask, render_template, request, jsonify
 import numpy as np
 import joblib
